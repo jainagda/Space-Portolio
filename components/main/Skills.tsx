@@ -8,8 +8,73 @@ import {
 import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
+import { SliderComp } from "../sub/slider";
 
 const Skills = () => {
+  const data = [
+    {
+      title: "3+",
+      description: "Courses To Become Best developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0444_city-header_milan_marianna-tomaselli-768x432.jpg",
+    },
+    {
+      title: "Frontend Course",
+      description: "Course To Become Best UI developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0378_hong-kong_jisu-choi_final_header-1-768x512.jpg",
+    },
+    {
+      title: "Backend Course",
+      description: "Course To Become Best Node.JS developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/location-page-header-prague-greta-samuel-768x512.jpg",
+    },
+    {
+      title: "AWS Course",
+      description: "Course To Become Best Cloud developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0440_florence_giordano-poloni_final_header-768x512.jpg",
+    },
+    {
+      title: "Full Stack Course",
+      description: "Course To Become Full Stack Developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0449_venice_marianna-tomaselli_final_header-768x432.jpg",
+    },
+    {
+      title: "3+",
+      description: "Courses To Become Best developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0444_city-header_milan_marianna-tomaselli-768x432.jpg",
+    },
+    {
+      title: "Frontend Course",
+      description: "Course To Become Best UI developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0378_hong-kong_jisu-choi_final_header-1-768x512.jpg",
+    },
+    {
+      title: "Backend Course",
+      description: "Course To Become Best Node.JS developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/location-page-header-prague-greta-samuel-768x512.jpg",
+    },
+    {
+      title: "AWS Course",
+      description: "Course To Become Best Cloud developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0440_florence_giordano-poloni_final_header-768x512.jpg",
+    },
+    {
+      title: "Full Stack Course",
+      description: "Course To Become Full Stack Developer",
+      image:
+        "https://cdn.theculturetrip.com/wp-content/uploads/2019/04/ia_0449_venice_marianna-tomaselli_final_header-768x432.jpg",
+    },
+  ];
+  // Check if window is defined (client-side)
+  const isClient = typeof window !== "undefined";
   return (
     <section
       id="skills"
